@@ -1,7 +1,7 @@
 # Inshort
-This is News App.Where User can read top 100 news relative to the Entertainment, Sports, Science, Technology, Health etc.
-Tech stack:- Android SDK, Retrofit, Coroutine , LiveData and Android pattern(MVVM) ,Kotlin
-Dependency of the Project:-
+# This is News App.Where User can read top 100 news relative to the Entertainment, Sports, Science, Technology, Health etc.
+# Tech stack:- Android SDK, Retrofit, Coroutine , LiveData and Android pattern(MVVM) ,Kotlin
+# Dependency of the Project:-
    //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
