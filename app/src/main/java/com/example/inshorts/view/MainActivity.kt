@@ -1,9 +1,10 @@
-package com.example.inshorts
+package com.example.inshorts.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.inshorts.adapter.PagerAdapter
+import com.example.inshorts.R
 
-import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

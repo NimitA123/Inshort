@@ -1,13 +1,11 @@
-package com.example.inshorts
+package com.example.inshorts.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.bumptech.glide.Glide
+import com.example.inshorts.R
 import kotlinx.android.synthetic.main.activity_details.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.news_item_layout.*
-import kotlinx.android.synthetic.main.news_item_layout.image
 
 class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.inshorts.R
 import com.example.inshorts.data.model.model.ArticlesDTO
-import com.example.inshorts.onItemClickListener
 
 class newsAdapter(var newsData: ArrayList<ArticlesDTO>, var onItemClickListener: onItemClickListener) : RecyclerView.Adapter<newsViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): newsViewHolder {

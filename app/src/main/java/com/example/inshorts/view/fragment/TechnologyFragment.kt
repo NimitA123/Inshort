@@ -1,4 +1,4 @@
-package com.example.inshorts
+package com.example.inshorts.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,35 +9,36 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.inshorts.view.DetailsActivity
+import com.example.inshorts.R
 import com.example.inshorts.adapter.newsAdapter
 import com.example.inshorts.data.model.model.ArticlesDTO
 import com.example.inshorts.data.model.remoteDatabase.ApiService
 import com.example.inshorts.data.model.remoteDatabase.Network
+import com.example.inshorts.adapter.onItemClickListener
 import com.example.inshorts.reposirity.newsRepository
 import com.example.inshorts.viewModel.MainNewsViewModel
 import com.example.inshorts.viewModel.newsViewModel
-import kotlinx.android.synthetic.main.fragment_entertainment.*
-import kotlinx.android.synthetic.main.fragment_health.*
+import kotlinx.android.synthetic.main.fragment_technology.*
 
 
-class EntertainmentFragment : Fragment(), onItemClickListener {
-    private lateinit var newsViewModel1:newsViewModel
+class TechnologyFragment : Fragment(), onItemClickListener {
+    private lateinit var newsViewModel1: newsViewModel
     private var newsData = arrayListOf<ArticlesDTO>()
     private lateinit var newsAdapter1: newsAdapter
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_entertainment, container, false)
+        return inflater.inflate(R.layout.fragment_technology, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val apiService = Network.getRetrofit().create(ApiService::class.java)
         var repository = newsRepository(apiService)
         newsViewModel1 = ViewModelProvider(this, MainNewsViewModel(repository)).get(newsViewModel::class.java)
-        newsViewModel1.getCategory("entertainment")
+        newsViewModel1.getCategory("technology")
         newsViewModel1.newsData.observe(viewLifecycleOwner , Observer{
             newsData.addAll(it.articles as ArrayList<ArticlesDTO>)
             setAdapter()
@@ -48,8 +49,8 @@ class EntertainmentFragment : Fragment(), onItemClickListener {
     private fun setAdapter() {
         newsAdapter1 = newsAdapter(newsData, this)
         var linearLayout = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        recyclerviewofentertainment.adapter = newsAdapter1
-        recyclerviewofentertainment.layoutManager = linearLayout
+        recyclerviewoftechnology.adapter = newsAdapter1
+        recyclerviewoftechnology.layoutManager = linearLayout
     }
 
     override fun OnItemclick(image: String, contain: String) {
@@ -58,6 +59,5 @@ class EntertainmentFragment : Fragment(), onItemClickListener {
         intent.putExtra("contain", contain)
         startActivity(intent)
     }
-
 
 }

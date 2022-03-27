@@ -1,4 +1,4 @@
-package com.example.inshorts
+package com.example.inshorts.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,18 +9,20 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.inshorts.view.DetailsActivity
+import com.example.inshorts.R
 import com.example.inshorts.adapter.newsAdapter
 import com.example.inshorts.data.model.model.ArticlesDTO
 import com.example.inshorts.data.model.remoteDatabase.ApiService
 import com.example.inshorts.data.model.remoteDatabase.Network
+import com.example.inshorts.adapter.onItemClickListener
 import com.example.inshorts.reposirity.newsRepository
 import com.example.inshorts.viewModel.MainNewsViewModel
 import com.example.inshorts.viewModel.newsViewModel
 import kotlinx.android.synthetic.main.fragment_health.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
 
-class HealthFragment : Fragment() ,onItemClickListener{
+class HealthFragment : Fragment() , onItemClickListener {
     private lateinit var newsViewModel1:newsViewModel
     private var newsData = arrayListOf<ArticlesDTO>()
     private lateinit var newsAdapter1: newsAdapter
