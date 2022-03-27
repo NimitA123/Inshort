@@ -32,16 +32,11 @@ Android SDK, Retrofit, Coroutine , LiveData and Android pattern(MVVM) ,Kotlin
  
  ## *ScreenShort of App
  <p float="left">
-  <img src="https://user-images.githubusercontent.com/86598310/160297078-60ceb5f5-5973-457a-9da7-28a9aceb6732.jpeg" width="100" />
-  <img src="https://user-images.githubusercontent.com/86598310/160297199-34803f41-0e09-4ea2-a428-294eb68495d8.jpeg" width="100" /> 
-  <img src="https://user-images.githubusercontent.com/86598310/160297203-3cc41f38-8df9-4488-8c83-f6eba0ef2881.jpeg" width="100" />
+  <img src="https://user-images.githubusercontent.com/86598310/160297078-60ceb5f5-5973-457a-9da7-28a9aceb6732.jpeg" width="200" />
+  <img src="https://user-images.githubusercontent.com/86598310/160297199-34803f41-0e09-4ea2-a428-294eb68495d8.jpeg" width="200" /> 
+  <img src="https://user-images.githubusercontent.com/86598310/160297203-3cc41f38-8df9-4488-8c83-f6eba0ef2881.jpeg" width="200" />
+  <img src="https://user-images.githubusercontent.com/86598310/160297214-461c63a2-4138-4900-8be9-789202e3f501.jpeg" width="200" />
 </p>
-![WhatsApp Image 2022-03-28 at 12 42 42 AM (3)](https://user-images.githubusercontent.com/86598310/160297078-60ceb5f5-5973-457a-9da7-28a9aceb6732.jpeg)
-![WhatsApp Image 2022-03-28 at 12 42 42 AM (2)](https://user-images.githubusercontent.com/86598310/160297199-34803f41-0e09-4ea2-a428-294eb68495d8.jpeg)
-![WhatsApp Image 2022-03-28 at 12 42 42 AM (3)](https://user-images.githubusercontent.com/86598310/160297203-3cc41f38-8df9-4488-8c83-f6eba0ef2881.jpeg)
-![WhatsApp Image 2022-03-28 at 12 42 42 AM](https://user-images.githubusercontent.com/86598310/160297214-461c63a2-4138-4900-8be9-789202e3f501.jpeg)
-
-
 
 ## *Video of App :
 https://user-images.githubusercontent.com/86598310/160298799-8b77b8cb-ba03-41c0-a621-3d3b29b8d144.mp4
