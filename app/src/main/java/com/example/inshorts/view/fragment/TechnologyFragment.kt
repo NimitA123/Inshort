@@ -1,6 +1,7 @@
 package com.example.inshorts.view.fragment
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -55,8 +56,7 @@ class TechnologyFragment : Fragment(), onItemClickListener {
 
     override fun OnItemclick(image: String, contain: String) {
         var intent = Intent(context, DetailsActivity::class.java)
-        intent.putExtra("image", image)
-        intent.putExtra("contain", contain)
+        intent.putExtra("Url", contain)
         startActivity(intent)
     }
 
